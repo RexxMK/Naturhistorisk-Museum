@@ -51,6 +51,53 @@ a{}
     text-align: left;
     margin-bottom: 10px;
 }
+
+
+/*Donation*/
+#donation{
+    display: flex;
+}
+
+#donation div{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+#donation img{
+    width: 500px;
+}
+
+#donation_text{
+    flex-direction: column;
+}
+
+#donation h2{
+    color: #F69D10;
+
+    margin-bottom: 40px;
+}
+
+#donation a{
+    color: white;
+    background-color: #6D9887;
+    text-decoration-line: none;
+
+    width: 120px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20%;
+    margin-top: 40px;
+}
+
+#natsvaermer img{
+    width: 90px;
+
+    position: relative;
+}
     
 /*Instafeed med 4x img*/
 #instafeed h2{
@@ -58,13 +105,14 @@ a{}
     justify-content: center;
 
     color: #F69D10;
+    padding-bottom: 30px;
 }
 
 #instafeed_img{
     display: flex;
-    justify-content: space-around;
-    
-    /*placeholder*/
-    background-color: burlywood;
-    height: 450px;
+    justify-content: space-between;
+}
+
+#instafeed_img div{
+    width: 20%;
 }

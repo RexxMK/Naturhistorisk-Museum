@@ -38,7 +38,8 @@ h4{
 /*HEADER*/
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
     border-bottom: 1px solid black;
 }
 
@@ -48,9 +49,16 @@ header{
 
 
 /*Navigation*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
 nav a{
     text-decoration: none;
     color: black;
+    
 }
 
 nav a:hover{
@@ -101,6 +109,9 @@ nav a:hover{
 #firekort img {
     width: 100%
 }
+
+    
+
 
 /*Instafeed med 4x img*/
 #instafeed h2{

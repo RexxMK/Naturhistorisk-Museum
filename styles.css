@@ -84,9 +84,16 @@ nav a:hover{
 }
     
 /*Instafeed med 4x img*/
+#instafeed h2{
+    display: flex;
+    justify-content: center;
+
+    color: #F69D10;
+}
+
 #instafeed_img{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
     /*placeholder*/
     background-color: burlywood;

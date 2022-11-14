@@ -193,10 +193,6 @@ nav a:hover{
 #instafeed_img div{
     width: 20%;
     justify-content: space-around;
-    
-    /*placeholder*/
-    background-color: burlywood;
-    height: 450px;
 }
 
 

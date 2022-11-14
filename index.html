@@ -1,119 +1,224 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naturhistorisk Museum</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!DOCTYPE html> 
 
-<body>
-    <header>
-        <div id="logo">
-        <a href="index.html"><img src="svg/logo.svg" alt="logo"></a>
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Naturhistorisk Museum</title> 
+
+    <link rel="stylesheet" href="styles.css"> 
+
+</head> 
+
+ 
+
+<body> 
+
+    <header> 
+
+        <div id="logo"> 
+
+        <a href="index.html"><img src="svg/logo.svg" alt="logo"></a> 
+
+        </div> 
+
+ 
+
+        <nav> 
+
+            <div class="dropdown"> 
+
+                <div> 
+
+                    <a href="#">Planlæg besøg</a> 
+
+                </div> 
+
+             
+
+                <div class="dropdown-content"> 
+
+                    <ul> 
+
+                        <li><a href="#">Praktiske informationer</a></li> 
+
+                        <li><a href="#">Udstillinger</a></li>   
+
+                        <li><a href="#">Aktiviteter</a></li>   
+
+                        <li><a href="#">Books os</a></li> 
+
+                    </ul>                     
+
+                </div> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <a href="#">Skoler & Institutioner</a> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <a href="#">Forskning</a> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <a href="#">Om os</a> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <a href="#">Webshop</a> 
+
+            </div> 
+
+        </nav> 
+
+ 
+
+        <div id="flag"> 
+
+            <a href="#"><img src="svg/flag_uk.svg" alt="UK flag"></a> 
+
+       </div> 
+
+ 
+
+    </header> 
+
+ 
+ 
+
+    <main> 
+
+ 
+
+        <!-- Fire kort med fokusområder--> 
+
+ 
+
+        <section id="firekort"> 
+
+            <div> 
+
+                <img src="img/nm_indgang_stor.jpg" alt=""> 
+
+                <h3>Planlæg dit besøg</h3> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <img src="img/slange_stor.jpg" alt=""> 
+
+                <h3>Udstillinger</h3> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <img src="img/slange_stor.jpg" alt=""> 
+
+                <h3>Aktiviteter</h3> 
+
+            </div> 
+
+ 
+
+            <div> 
+
+                <img src="img/bookos_stor.jpg" alt=""> 
+
+                <h3>Book os</h3> 
+
+            </div> 
+
+        </section> 
+
+<!--Donation-->
+<section id="donation">
+
+    <div>
+        <img src="svg/donation.svg" alt="Donation">
+    </div>
+
+    <div>
+
+        <div id="donation_text">
+            <h2>Vi har brug for din<br> hjælp...</h2>
+            <p>Ved at støtte museet er du med til at sikre museets<br> fortsatte udvikling, så vi kan forblive en stærk<br> kulturinstitution i Aarhus og i Danmark.
+                <br>
+                <br>
+                Med dit bidrag er du med til at sikre vores<br> mulighed for at lave spændende<br> publikumsoplevelser, udstillinger, aktiviteter og<br> forskning - nu og i fremtiden.</p>
+            <a href="">Donér</a>    
         </div>
 
-        <nav>
-            <div class="dropdown">
-                <div>
-                    <a href="#">Planlæg besøg</a>
-                </div>
-            
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="#">Praktiske informationer</a></li>
-                        <li><a href="#">Udstillinger</a></li>  
-                        <li><a href="#">Aktiviteter</a></li>  
-                        <li><a href="#">Books os</a></li>
-                    </ul>                    
-                </div>
-            </div>
+        <div></div>
+        
+    </div>
 
-            <div>
-                <a href="#">Skoler & Institutioner</a>
-            </div>
+</section>
 
-            <div>
-                <a href="#">Forskning</a>
-            </div>
+ 
 
-            <div>
-                <a href="#">Om os</a>
-            </div>
+        <!--Instafeed med 4x img--> 
 
-            <div>
-                <a href="#">Webshop</a>
-            </div>
-        </nav>
+        <section id="instafeed"> 
 
-        <div id="flag">
-            <a href="#"><img src="svg/flag_uk.svg" alt="UK flag"></a>
-       </div>
+            <h2>Følg @nathistaarhus på Instagram</h2> 
 
-    </header>
+ 
 
+            <div id="instafeed_img"> 
 
+                <div><img src="img/insta_lion.jpg" alt="Løve"></div> 
 
-    <main>
+                <div><img src="img/insta_eco.jpg" alt="Grøn udstilling"></div> 
 
-        <!--Donation-->
-        <section id="donation">
-            <div>
-                <img src="svg/donation.svg" alt="Donation">
-            </div>
-            <div>
-                <div id="donation_text">
-                    <h2>Vi har brug for din<br> hjælp...</h2>
-                    <p>Ved at støtte museet er du med til at sikre museets<br> fortsatte udvikling, så vi kan forblive en stærk<br> kulturinstitution i Aarhus og i Danmark.
-                        <br>
-                        <br>
-                        Med dit bidrag er du med til at sikre vores<br> mulighed for at lave spændende<br> publikumsoplevelser, udstillinger, aktiviteter og<br> forskning - nu og i fremtiden.</p>
-                    <a href="">Donér</a>    
-                </div>
-                <div id="natsvaermer">
-                    <img src="svg/natsvaermer.svg" alt="Natsværmer">
-                </div>
-        <!-- Fire kort med fokusområder-->
+                <div><img src="img/insta_fugle.jpg" alt="To fugle"></div> 
 
-        <section id="firekort">
-            <div>
-                <img src="img/nm_indgang_stor.jpg" alt="">
-                <h3>Planlæg dit besøg</h3>
-            </div>
+                <div><img src="img/insta_owl.jpg" alt="Ugle"></div> 
 
-            <div>
-                <img src="img/slange_stor.jpg" alt="">
-                <h3>Udstillinger</h3>
-            </div>
+            </div> 
 
-            <div>
-                <img src="img/slange_stor.jpg" alt="">
-                <h3>Aktiviteter</h3>
-            </div>
+        </section> 
 
-            <div>
-                <img src="img/bookos_stor.jpg" alt="">
-                <h3>Book os</h3>
-            </div>
-        </section>
+ 
 
-        <!--Instafeed med 4x img-->
-        <section id="instafeed">
-            <h2>Følg @nathistaarhus på Instagram</h2>
+    </main> 
 
-            <div id="instafeed_img">
-                <div><img src="img/insta_lion.jpg" alt="Løve"></div>
-                <div><img src="img/insta_eco.jpg" alt="Grøn udstilling"></div>
-                <div><img src="img/insta_fugle.jpg" alt="To fugle"></div>
-                <div><img src="img/insta_owl.jpg" alt="Ugle"></div>
-            </div>
-        </section>
+     
 
-    </main>
-    
-    <footer>
+    <footer> 
 
-    </footer>
-</body>
-</html>
+ 
+
+    </footer> 
+
+</body> 
+
+</html> 

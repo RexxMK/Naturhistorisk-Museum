@@ -1,1 +1,11 @@
 /*Velkommen til det fedeste CSS dokument*/
+
+/*Instafeed med 4x img*/
+#instafeed_img{
+    display: flex;
+    justify-content: space-between;
+    
+    /*placeholder*/
+    background-color: burlywood;
+    height: 450px;
+}

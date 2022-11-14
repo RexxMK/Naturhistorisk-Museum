@@ -24,6 +24,33 @@ h4{
 }
 
 a{}
+
+
+/*Navigation med dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -40%;
+    background-color: white;
+    min-width: 100px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content li{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
     
 /*Instafeed med 4x img*/
 #instafeed_img{

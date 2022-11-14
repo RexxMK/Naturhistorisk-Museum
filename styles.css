@@ -104,12 +104,29 @@ nav a:hover{
     text-align: left;
     margin-bottom: 10px;
 }
-
+  
 
 
 
 
 /*MAIN*/
+
+/*Fire kort med fokusområder*/
+
+#firekort {
+    display: flex;
+    justify-content: space-around;
+}
+
+#firekort div {
+    width: 20%;
+}
+
+#firekort img {
+    width: 100%
+}
+
+
 
 /*Instafeed med 4x img*/
 #instafeed h2{
@@ -126,4 +143,24 @@ nav a:hover{
     /*placeholder*/
     background-color: burlywood;
     height: 450px;
+}
+
+
+
+
+
+/*MOBIL*/
+@media only screen and (max-width: 768px){
+
+    /*Fire kort*/
+    #firekort {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*LAPTOP*/
+
+@media only screen and (min-width: 768px){
+
 }

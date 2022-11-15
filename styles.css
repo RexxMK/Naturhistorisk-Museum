@@ -1,6 +1,6 @@
 /*Velkommen til det fedeste CSS dokument*/ 
 
-/*Gennerelle regler*/ 
+                                                                            /*Gennerelle regler*/ 
 
 *{ 
     margin: 0; 
@@ -15,33 +15,106 @@ a {
 img{ 
     width: 100%; 
 } 
+
+/*SKRIFTSREGLER*/
     
-h1,h2,h3,h4,p,a{ 
+h1,h2,h3,h4,h5,h6,p,a{ 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 } 
+
+h1,h2{
+    color: #f69d10;
+}
+
+h3,h5,h6{
+    color: #6d9887;
+}
     
 h1{ 
     font-size: 95pt; 
-    color: #f69d10; 
+    text-transform: uppercase; 
 } 
     
-h2{    
-    font-size: 65pt; 
-    color: #f69d10; 
+h2{     
+    font-size: 3vw; 
 } 
     
 h3{ 
-    font-size: 35pt; 
-    color: #6d9887; 
+    font-size: 4vw;
 } 
     
 h4{ 
     font-size: 25pt; 
     color: white; 
 } 
-    
 
-    /*HEADER*/ 
+h5{
+    font-size: 1.5vw;
+}
+
+h6{
+    font-size: 2vw;
+}
+
+p{
+    font-size: 1.2vw;
+}
+
+
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+#fo_her{
+    color: white;
+}
+
+
+
+/*HEADER*/ 
     
 header{ 
     display: flex; 
@@ -127,7 +200,7 @@ nav a:hover{
 
 
 
-
+                                                                           /*INDEX*/
     /*MAIN*/ 
 
 
@@ -271,9 +344,6 @@ div #donation_text{
 }
 
 #donation h2{
-    color: #F69D10;
-    font-size: 3vw;
-
     margin-bottom: 10%;
 }
 
@@ -333,7 +403,41 @@ div #donation_natsvaermer{
 #instafeed_img div{
     width: 24%;
 }
-    
+
+
+
+
+
+                                                        /*PRAKTISK INFORMATIONSSIDE*/
+#open{
+    margin-top: 170px; /*skal være 170px for ikke at forsvinde under header.*/
+}
+
+.prin{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+   
+
+    /*Margin for alle sections på siden så der er luft til hver side. skal måske flyttes til @media så det blir responsivt*/
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.prin div{
+    width: 50%;
+}
+
+.prin h2{
+    color: #6d9887;
+}
+
+
+
+
+
+
+
   
 
 /*her starter footer */
@@ -393,6 +497,7 @@ footer h4 {
 
 
     /*MOBIL*/ 
+                                                                        /*MOBIL*/ 
     
 @media screen and (max-width: 768px){ 
 

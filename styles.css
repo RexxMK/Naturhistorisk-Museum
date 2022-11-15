@@ -51,6 +51,7 @@ header{
     width: 100%; 
     height: 120px; 
     background-color: white;
+    z-index: 100;
         
     box-shadow: 2px 2px 5px lightgrey;
 
@@ -130,128 +131,95 @@ nav a:hover{
     /*MAIN*/ 
 
 
-   
-    
+
+
+
     /*SLIDESHOW*/
 
-    .card {
-      position: relative;
-      
+    
+
+    .slideshow {
+     
       width: 100%;
-      
-      margin-top: 120px;
-      overflow:hidden;
       z-index: -1;
+      margin-top: 120px;
+      overflow: hidden;
+      
     }
     
   
     
-    .card_part-three {
+    .drage_slide {
       position: absolute;
-      top: 0;
+      top: 120px;
       left: 0;
-      
+    
       width: 100%;
-      height: 45em;
       
       transform: translateX( 100% );
       background-image: url(img/drage.jpg);
-      background-size: cover;
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
       
       animation: Transition 30s linear infinite;
     }
     
     
-    .card_part-two {
+    .loeve_slide {
       background-image: url( img/lion.jpg );
       background-size: cover;
-      width: 100%;
-      height: 45em;
       background-repeat: no-repeat;
-
     }
 
-    
-    
     @keyframes Transition {
       0% { transform: translateX( -100% ); }
       5% { transform: translateX(0);}
       25% { transform: translateX(0);}
-      28% { transform: translateX(100%);}
+      30% { transform: translateX(100%);}
       60% { transform: translateX( 100% ); }
-      75% { transform: translateX( 0 ); }
-      95% { transform: translateX( 0 ); }
+      65% { transform: translateX( 0 ); }
+      85% { transform: translateX( 0 ); }
+      90% { transform: translateX( -100% ); }
       100% { transform: translateX( -100% ); }
     }
 
-    .læs_mere_knap a h4 {
-        padding: 10px 15px 10px 15px;
-        background-color: #F69D10;
-        border-radius: 25px;
-        font-size: 1.2vw;
-        width: 10%;
-        margin-top: 20px;
+    #loeve_tekst {
+    position: relative;
+    top: 15vw;
+    left: 40vw;
+    height: 50vw;
     }
 
-    .card h1{
-        font-size: 7vw;
+    #drage_tekst {
+        position: relative;
+        top: 15vw;
+        left: 15vw;
+        height: 50vw;
+    }
+
+    .slideshow h1{
+        font-size: 5vw;
         width: 75%;
 
     }
 
-    .card h4 {
+    .slideshow h4 {
         font-size: 1.2vw;
         width: 40%;
     }
 
-    #loeve_tekst {
-        position: relative;
-        top: 30%;
-        left: 35%;
+
+
+.læs_mere_knap h4 {
+        padding: 1vw 2vw 1vw 2vw;
+        background-color: #F69D10;
+        border-radius: 25px;
+        font-size: 1.2vw;
+        margin-top: 1.5vw;
+        width: 10vw;
+        
     }
-
-    #drage_tekst {
-
-        position: relative;
-        top: 40%;
-        left: 10%;
-    }
-
-
-
-
-
-    /*Slideshow*/
-
- /*   
-#slideshow {
-    max-width: 1650px;
-    margin: 0 auto;
-    overflow: hidden;
-
-
-}
-
-#slideshow_indhold {
-    display: flex;
-    animation: carousel 20s ease-in-out infinite;
-}
-
-.slideshow_img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
-@keyframes carousel {
-    100%
-    {
-        transform: translateX(-2560px);
-    }
-}
-
-*/
 
 
     /*Fire kort med fokusområder*/ 
@@ -260,7 +228,7 @@ nav a:hover{
  #firekort { 
     display: flex; 
     justify-content: space-around; 
-    margin-top: 170px;
+    margin-top: 80px;
     margin-bottom: 100px;
     } 
 
@@ -367,7 +335,63 @@ div #donation_natsvaermer{
 }
     
   
+
+/*her starter footer */
+
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.orange div {
+    width: auto;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
     
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
     /*MOBIL*/ 
     
 @media screen and (max-width: 768px){ 
@@ -385,13 +409,58 @@ div #donation_natsvaermer{
         display: none;
     }
 
+    /*slideshow*/
+    /*Ændrer størrelsen + format så det er tilpasset mobil*/
+.slideshow {
+    margin-top: 90px;
+}
+    
+.drage_slide{
+    top: 90px;
+}
+
+
+    #loeve_tekst {
+        top: 11vw;
+        left: 40vw;
+        height: 75vw;
+    }
+
+    #drage_tekst {
+        top: 9vw;
+        left: 10vw;
+        height: 75vw;
+        width: 70%;
+    }
+
+    #loeve_tekst h1, #drage_tekst h1 {
+        text-align: left;
+        font-size: 6vw;
+    }
+
+    #loeve_tekst h4, #drage_tekst h4 {
+        font-size: 2.5vw;
+    }
+    .slideshowtekst_mobil  {
+        width: 70%;
+    }
+
+    .slideshowtekst_laptop {
+        display: none;
+    }
+
+    .læs_mere_knap h4 {
+        width: 16vw;
+    }
+
     /*Fire kort med fokusområder*/
     #firekort {
         flex-wrap: wrap;
+        margin-top: 50px;
     }
 
     #firekort a {
-        width: 80%;
+        width: 45%;
         margin-bottom: 50px;
     }
 
@@ -445,6 +514,32 @@ div #donation_natsvaermer{
     #instafeed h2{ 
         font-size: 3.7vw;
     } 
+
+    /*FOOTER*/
+
+
+    .orange div {
+        width: 35%;
+        margin: 10px;
+    }
+
+    .orange h4 {
+        font-size: 3vw;
+    }
+
+    .orange li {
+        font-size: 2vw;
+        line-height: 1.5;
+    }
+
+    #ikoner a {
+        font-size: 6vw;
+    }
+    #ikoner div {
+        
+        flex-wrap: nowrap;
+        width: 50%;
+    }
     
 } 
     
@@ -454,6 +549,12 @@ div #donation_natsvaermer{
     
 @media screen and (min-width: 768px){ 
     #burger_menu {
+        display: none;
+    }
+
+    /*SLIDESHOW*/
+    /*Skjuler mobilversion af teksten*/
+    .slideshowtekst_mobil {
         display: none;
     }
     } 

@@ -1,19 +1,28 @@
 /*Import af fonts fra Google Fonts*/
 
-/*Fjerner padding og Margin på hele siden*/
-* {
-    margin: 0;
-    padding: 0;
+
+/*UDSTILLINGSOVERSIGT*/
+/*Seks kort over udstillinger */
+
+#udstillinger {
+    margin-top: 120px;
 }
 
-/*her starter main */
-
+#udstillinger h1 {
+    color: #f69d10;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 .sekskort {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    
     width: 85%;
 }
 
@@ -33,25 +42,7 @@
     padding-top: 15px;
 }
 
-main {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 1px;
-}
-
-main h1 {
-    color: #f69d10;
-    text-transform: uppercase;
-    font-size: 70px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-main h3 {
-    color: #6D9887;
-}
-
-main p {
+.sekskort p {
     font-size: 14px;
 }
 

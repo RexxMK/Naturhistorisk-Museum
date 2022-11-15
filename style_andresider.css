@@ -1,0 +1,165 @@
+/*Import af fonts fra Google Fonts*/
+
+
+/*UDSTILLINGSOVERSIGT*/
+/*Seks kort over udstillinger */
+
+#udstillinger {
+    margin-top: 120px;
+}
+
+#udstillinger h1 {
+    color: #f69d10;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.sekskort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 85%;
+}
+
+.sekskort a {
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    padding-bottom: 50px;
+}
+
+.sekskort img {
+    width: 100%;
+}
+
+.sekskort p, .sekskort h3 {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.sekskort p {
+    font-size: 14px;
+}
+
+/*her starter footer */
+
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+/*Mobil*/ 
+
+@media screen and (max-width: 768px){
+    .sekskort {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sekskort a {
+        width: 100%;
+    }
+
+    .udstilling_com {
+        display: none;
+    }
+
+    .hvid img {
+        position: relative;
+        top: 20px;
+        left: 70%;
+        width: 20%;
+    }
+
+    main h1 {
+        color: #f69d10;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    #firben_udstilling_mobil {
+        padding-bottom: 40px;
+        width: 87%;
+    }
+
+    #firben_udstilling_com {
+        display: none;
+    }
+
+}
+
+/*laptop*/  
+@media screen and (min-width: 768px){
+
+    .udstilling_mobil {
+        display: none;
+    }
+
+    #firben_udstilling_mobil {
+        display: none;
+    }
+
+    #firben_udstilling_com {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

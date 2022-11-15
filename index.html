@@ -13,7 +13,7 @@
  
 
 <body> 
-
+    
     <header> 
         <div id="logo"> 
             <a href="index.html"><img src="svg/logo.svg" alt="logo"></a> 
@@ -32,18 +32,39 @@
                     </ul>
                 </div>
             </div> 
-
+            
             <div>
                 <a href="#">Skoler & Institutioner</a>
             </div> 
 
-            <div> 
-                <a href="#">Forskning</a> 
+           
+            <div class="dropdown">
+                <div> 
+                    <a href="#">Forskning</a> 
+                </div> 
+                <div class="dropdown-content"> 
+                    <ul> 
+                        <li><a href="#">Praktiske informationer</a></li> 
+                        <li><a href="#">Udstillinger</a></li>
+                        <li><a href="#">Aktiviteter</a></li>
+                        <li><a href="#">Books os</a></li> 
+                    </ul>
+                </div>
             </div> 
-
-            <div> 
-                <a href="#">Om os</a> 
-            </div> 
+            
+            <div class="dropdown">
+                <div> 
+                    <a href="#">Om os</a> 
+                </div> 
+                <div class="dropdown-content"> 
+                    <ul> 
+                        <li><a href="#">Praktiske informationer</a></li> 
+                        <li><a href="#">Udstillinger</a></li>
+                        <li><a href="#">Aktiviteter</a></li>
+                        <li><a href="#">Books os</a></li> 
+                    </ul>
+                </div>
+            </div>
             
             <div> 
                 <a href="#">Webshop</a>
@@ -52,32 +73,57 @@
         <div id="flag"> 
             <a href="#"><img src="svg/flag_uk.svg" alt="UK flag"></a> 
         </div>
-    </header> 
-    
-    <main> 
+
+        <div id="burger_menu">
+            <a href="#"><img src="svg/burgermenu.svg" alt=""></a>
+        </div>
+
+
+    </header>
+
+
+
+        <!--Slideshow-->
+<!--
+        <section id="slideshow">
+            <div id="slideshow_indhold">
+                <img class="slideshow_img" src="img/drage.jpg" alt="">
+                <img class="slideshow_img" src="img/lion.jpg" alt="">
+            </div>
+        </section>-->
+
 
         <!-- Fire kort med fokusområder--> 
 
         <section id="firekort"> 
-            <div> 
-                <img src="img/nm_indgang_stor.jpg" alt=""> 
-                <h3>Planlæg dit besøg</h3>
-            </div> 
+                <a href="">
+                    <div>
+                        <img src="img/nm_indgang_stor.jpg" alt=""> 
+                    </div>
+                    <h3>Planlæg dit besøg</h3>
+                </a>
             
-            <div>
-                <img src="img/slange_stor.jpg" alt="">
-                <h3>Udstillinger</h3>
-            </div> 
+                <a href="#">
+                    <div>
+                        <img src="img/antiloper_stor.jpg" alt="">
+                    </div>
+                    <h3>Udstillinger</h3>
+                </a> 
             
-            <div> 
-                <img src="img/slange_stor.jpg" alt=""> 
-                <h3>Aktiviteter</h3> 
-            </div>
-            
-            <div>
-                <img src="img/bookos_stor.jpg" alt="">
-                <h3>Book os</h3> 
-            </div> 
+                <a href="#">
+                    <div>
+                        <img src="img/slange_stor.jpg" alt=""> 
+                    </div>
+                    <h3>Aktiviteter</h3> 
+                </a>
+        
+                <a href="#">
+                    <div>
+                        <img src="img/bookos_stor.jpg" alt="">
+                    </div>
+                    <h3>Book os</h3> 
+                </a>
+        
         </section> 
 
 <!--Donation-->
@@ -129,7 +175,7 @@
     </main> 
 
     <footer> 
-        
+
     </footer> 
 
 </body> 

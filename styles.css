@@ -7,6 +7,9 @@
     padding: 0; 
     box-sizing: border-box;   
 } 
+a {
+    text-decoration: none;
+}
        
 img{ 
     width: 100%; 
@@ -41,11 +44,15 @@ h4{
     
 header{ 
     display: flex; 
+    position: fixed;
+    top: 0;
     justify-content: space-between; 
     width: 100%; 
     height: 120px; 
+    background-color: white;
         
-    border-bottom: 1px solid black; 
+    box-shadow: 2px 2px 5px lightgrey;
+
 } 
     
 #logo{ 
@@ -77,6 +84,14 @@ nav a:hover{
     color: #f69d10; 
 } 
     
+
+#burger_menu img {
+    position: relative;
+    top: 25px;
+    right: 20px;
+    height: 40px;
+
+}
      
     
     /*Dropdown*/ 
@@ -106,22 +121,66 @@ nav a:hover{
     margin-bottom: 10px; 
 } 
       
+
+
+
+
+
     /*MAIN*/ 
+
+
+    /*Slideshow*/
+
+ /*   
+#slideshow {
+    max-width: 1650px;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+}
+
+#slideshow_indhold {
+    display: flex;
+    animation: carousel 20s ease-in-out infinite;
+}
+
+.slideshow_img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes carousel {
+    100%
+    {
+        transform: translateX(-2560px);
+    }
+}
+
+*/
+
+
     /*Fire kort med fokusområder*/ 
     
      
  #firekort { 
     display: flex; 
     justify-content: space-around; 
+    margin-top: 170px;
+    margin-bottom: 100px;
     } 
+
+    #firekort a {
+        width: 23%;
+    }
+
+    #firekort h3 {
+        font-size: 2vw;
+    }
     
-#firekort div { 
-    width: 20%; 
-} 
-    
-#firekort img { 
-    width: 100% 
-    } 
+
+
 
 
     /*Donation*/
@@ -214,14 +273,34 @@ div #donation_natsvaermer{
     
     /*MOBIL*/ 
     
-@media only screen and (max-width: 768px){ 
+@media screen and (max-width: 768px){ 
+
+    /*Header*/
+
+    header {
+        height: 90px;
+    }
     
-    /*Fire kort*/ 
-    
-#firekort { 
-    display: flex; 
-    flex-wrap: wrap; 
-    } 
+    nav {
+        display: none;
+    }
+    #flag {
+        display: none;
+    }
+
+    /*Fire kort med fokusområder*/
+    #firekort {
+        flex-wrap: wrap;
+    }
+
+    #firekort a {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    #firekort h3 {
+        font-size: 4vw;
+    }
 
     /*Donation*/
 
@@ -265,7 +344,10 @@ div #donation_text{
     
     /*LAPTOP*/ 
     
-@media only screen and (min-width: 768px){ 
+@media screen and (min-width: 768px){ 
+    #burger_menu {
+        display: none;
+    }
     } 
     
      

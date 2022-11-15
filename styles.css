@@ -12,7 +12,7 @@ img{
     width: 100%; 
 } 
     
-h1,h2,h3,h4,a{ 
+h1,h2,h3,h4,p,a{ 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 } 
     
@@ -127,6 +127,8 @@ nav a:hover{
     /*Donation*/
 #donation{
     display: flex;
+    margin-top: 3%;
+    margin-bottom: 10%
 }
 
 #donation div{
@@ -136,7 +138,12 @@ nav a:hover{
 }
 
 #donation img{
-    width: 500px;
+    width: 67%;
+}
+
+div #donation_text{
+    width: 65%;
+    margin-left: 5.2%;
 }
 
 #donation_text{
@@ -145,26 +152,41 @@ nav a:hover{
 
 #donation h2{
     color: #F69D10;
-    font-size: 35pt;
+    font-size: 3vw;
 
-    margin-bottom: 40px;
+    margin-bottom: 10%;
+}
+
+#donation_text p{
+    font-size: 1.2vw;
+    color: #707070;
+    letter-spacing: 0.2px;
 }
 
 #donation a{
     color: white;
     background-color: #6D9887;
     text-decoration-line: none;
-    font-size: 15pt;
+    font-size: 1.4vw;
 
-    width: 120px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 35px;
+    margin-top: 10%;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 20%;
-    margin-top: 40px;
-    
+    text-align: center;
+    width: 38%;
+}
+
+div #donation_natsvaermer{
+    width: 35%;
+    position: relative;
+    margin-right: 8%;
+    margin-bottom: 9%;
+}
+
+#donation_natsvaermer img{
+    width: 50%;
 }
     
     
@@ -178,7 +200,7 @@ nav a:hover{
     font-weight: 100;
     font-size: 40pt;
 
-    padding-bottom: 35px;
+    padding-bottom: 45px;
 } 
     
      
@@ -200,6 +222,38 @@ nav a:hover{
     display: flex; 
     flex-wrap: wrap; 
     } 
+
+    /*Donation*/
+
+div #donation_natsvaermer{
+    display: none;
+}
+
+#donation img{
+    width: 80%;
+}
+
+div #donation_text{
+    margin-left: 0%;
+    width: 80%;
+}
+
+#donation_text h2{
+    font-size: 3.3vw;
+}
+
+#donation_text p{
+    font-size: 2.7vw;
+}
+
+#donation_text a{
+    font-size: 2.8vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 40%;
+}
+
+    /*Instafeed*/
 
 #instafeed_img{
     flex-wrap: wrap;

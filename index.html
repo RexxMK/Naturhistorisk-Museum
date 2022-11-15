@@ -1,14 +1,14 @@
-<!DOCTYPE html> 
-
-<html lang="en"> 
-
-<head> 
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Naturhistorisk Museum</title> 
-    <link rel="stylesheet" href="styles.css"> 
-</head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_andresider.css">
+    <title>Naturhistorisk museum</title>
+</head>
 
  
 
@@ -18,14 +18,17 @@
         <div id="logo"> 
             <a href="index.html"><img src="svg/logo.svg" alt="logo"></a> 
         </div> 
+        
+        <!--Navigation-->
         <nav> 
+            <!--PLANLÆG BESØG-->
             <div class="dropdown">
                 <div>         
                     <a href="#">Planlæg besøg</a> 
                 </div> 
                 <div class="dropdown-content"> 
                     <ul> 
-                        <li><a href="#">Praktiske informationer</a></li> 
+                        <li><a href="praktisk_info.html">Praktiske informationer</a></li> 
                         <li><a href="#">Udstillinger</a></li>
                         <li><a href="#">Aktiviteter</a></li>
                         <li><a href="#">Books os</a></li> 
@@ -81,17 +84,48 @@
 
     </header>
 
+    <main>
+       
+  <!--SLIDESHOW-->
 
 
-        <!--Slideshow-->
-<!--
-        <section id="slideshow">
-            <div id="slideshow_indhold">
-                <img class="slideshow_img" src="img/drage.jpg" alt="">
-                <img class="slideshow_img" src="img/lion.jpg" alt="">
+        <div class="slideshow">
+            
+          
+             <!--LØVESLIDE-->
+            <div class="loeve_slide">
+                <div id="loeve_tekst">
+                    <h1>JUL PÅ MUSEET</h1>
+                    <h4 class="slideshowtekst_laptop">Nyd den søde juletid blandt alle vores fantatsiske dyr. Mød og nus 
+                    vores pythonslange Buller, se om du kan finde alle nisserne, lær 
+                    om dyrenes liv fra vores seje formidlere, og test din viden i en 
+                    quiz om drager og mytiske dyr! Vi ses i juleferien!</h4>
+                    <h4 class="slideshowtekst_mobil">Mød slangen Buller, gå på jagt efter 
+                        alle nisserne, snak med vores seje formidlere, og test din viden 
+                        om drager og mytiske dyr!</h4>
+                    <a class="læs_mere_knap" href="index.html">
+                        <h4>Læs mere</h4>
+                    </a>
+                </div>
             </div>
-        </section>-->
+          
+           <!--DRAGESLIDE-->
+            <div class="drage_slide">
+                <div id="drage_tekst">
+                    <h1>DRAGEN ER LANDET</h1>
+                    <h4 class="slideshowtekst_laptop"> Porten til eventyrland står vidt åben, når naturvidenskab møder 
+                        fantasien i en udstilling fyldt med havfruer, enhjørninger, 
+                        drager og andre mytiske væsner. Du er inviteret med helt ud på 
+                        kanten af det vi ved – og det vi ikke ved.</h4>
+                        <h4 class="slideshowtekst_mobil">Du er inviteret med helt ud på 
+                            kanten af det vi ved – og det vi <i>ikke</i> ved.</h4>
+                        <a class="læs_mere_knap">
+                            <h4>Læs mere</h4>
+                        </a>
+                </div>
+            </div>
 
+        </div>
 
         <!-- Fire kort med fokusområder--> 
 
@@ -176,7 +210,66 @@
 
     </main> 
 
+
     <footer> 
+        <section>
+            <div class="hvid"> 
+                <img src="svg/svampe.svg" alt="svampe">
+            </div>
+        </section>
+
+        <section class="orange">
+            <div>
+                <h4>Naturhistorisk Museum</h4>
+                <ul>
+                    <li>Wilhelm Meyers Allé 10</li>
+                    <li>8000 Aarhus C</li>
+                    <li>Tlf 86 12 97 77</li>
+                    <li>nm@nathist.dk</li>
+                </ul>
+            </div>
+
+            <div class=>
+                <h4>Åbningstider</h4>
+                <ul>
+                    <li>Alle ugens dage - også mandage <br> kl. 10-16</li>
+                    <li>For mere information se <a id="fo_her" href="praktisk_info.html"> her</a>. </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Genveje</h4>
+                <ul>
+                    <li>Handelsbetingelser</li>
+                    <li>Persondata politik</li>
+                    <li>Cookie information</li>
+                </ul>
+            </div>
+
+            <div id="ikoner">
+                <h4>Følg os<h4>
+                <div>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </section>
 
     </footer> 
 

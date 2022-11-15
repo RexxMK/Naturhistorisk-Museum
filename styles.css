@@ -1,11 +1,12 @@
 /*Velkommen til det fedeste CSS dokument*/ 
 
-/*Gennerelle regler*/ 
+                                                                            /*Gennerelle regler*/ 
 
 *{ 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 a {
     text-decoration: none;
@@ -14,33 +15,106 @@ a {
 img{ 
     width: 100%; 
 } 
+
+/*SKRIFTSREGLER*/
     
-h1,h2,h3,h4,p,a{ 
+h1,h2,h3,h4,h5,h6,p,a{ 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 } 
+
+h1,h2{
+    color: #f69d10;
+}
+
+h3,h5,h6{
+    color: #6d9887;
+}
     
 h1{ 
     font-size: 95pt; 
-    color: #f69d10; 
+    text-transform: uppercase; 
 } 
     
-h2{    
-    font-size: 65pt; 
-    color: #f69d10; 
+h2{     
+    font-size: 3vw; 
 } 
     
 h3{ 
-    font-size: 35pt; 
-    color: #6d9887; 
+    font-size: 4vw;
 } 
     
 h4{ 
     font-size: 25pt; 
     color: white; 
 } 
-    
 
-    /*HEADER*/ 
+h5{
+    font-size: 1.5vw;
+}
+
+h6{
+    font-size: 2vw;
+}
+
+p{
+    font-size: 1.2vw;
+}
+
+
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+#fo_her{
+    color: white;
+}
+
+
+
+/*HEADER*/ 
     
 header{ 
     display: flex; 
@@ -50,6 +124,7 @@ header{
     width: 100%; 
     height: 120px; 
     background-color: white;
+    z-index: 100;
         
     box-shadow: 2px 2px 5px lightgrey;
 
@@ -125,40 +200,99 @@ nav a:hover{
 
 
 
-
+                                                                           /*INDEX*/
     /*MAIN*/ 
 
 
-    /*Slideshow*/
-
- /*   
-#slideshow {
-    max-width: 1650px;
-    margin: 0 auto;
-    overflow: hidden;
 
 
-}
 
-#slideshow_indhold {
-    display: flex;
-    animation: carousel 20s ease-in-out infinite;
-}
+    /*SLIDESHOW*/
 
-.slideshow_img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
+    
 
-@keyframes carousel {
-    100%
-    {
-        transform: translateX(-2560px);
+    .slideshow {
+     
+      width: 100%;
+      z-index: -1;
+      margin-top: 120px;
+      overflow: hidden;
+      
     }
-}
+    
+  
+    
+    .drage_slide {
+      position: absolute;
+      top: 120px;
+      left: 0;
+    
+      width: 100%;
+      
+      transform: translateX( 100% );
+      background-image: url(img/drage.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      
+      animation: Transition 30s linear infinite;
+    }
+    
+    
+    .loeve_slide {
+      background-image: url( img/lion.jpg );
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
 
-*/
+    @keyframes Transition {
+      0% { transform: translateX( -100% ); }
+      5% { transform: translateX(0);}
+      25% { transform: translateX(0);}
+      30% { transform: translateX(100%);}
+      60% { transform: translateX( 100% ); }
+      65% { transform: translateX( 0 ); }
+      85% { transform: translateX( 0 ); }
+      90% { transform: translateX( -100% ); }
+      100% { transform: translateX( -100% ); }
+    }
+
+    #loeve_tekst {
+    position: relative;
+    top: 15vw;
+    left: 40vw;
+    height: 50vw;
+    }
+
+    #drage_tekst {
+        position: relative;
+        top: 15vw;
+        left: 15vw;
+        height: 50vw;
+    }
+
+    .slideshow h1{
+        font-size: 5vw;
+        width: 75%;
+
+    }
+
+    .slideshow h4 {
+        font-size: 1.2vw;
+        width: 40%;
+    }
+
+
+
+.læs_mere_knap h4 {
+        padding: 1vw 2vw 1vw 2vw;
+        background-color: #F69D10;
+        border-radius: 25px;
+        font-size: 1.2vw;
+        margin-top: 1.5vw;
+        width: 10vw;
+        
+    }
 
 
     /*Fire kort med fokusområder*/ 
@@ -167,7 +301,7 @@ nav a:hover{
  #firekort { 
     display: flex; 
     justify-content: space-around; 
-    margin-top: 170px;
+    margin-top: 80px;
     margin-bottom: 100px;
     } 
 
@@ -210,9 +344,6 @@ div #donation_text{
 }
 
 #donation h2{
-    color: #F69D10;
-    font-size: 3vw;
-
     margin-bottom: 10%;
 }
 
@@ -272,10 +403,101 @@ div #donation_natsvaermer{
 #instafeed_img div{
     width: 24%;
 }
-    
+
+
+
+
+
+                                                        /*PRAKTISK INFORMATIONSSIDE*/
+#open{
+    margin-top: 170px; /*skal være 170px for ikke at forsvinde under header.*/
+}
+
+.prin{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+   
+
+    /*Margin for alle sections på siden så der er luft til hver side. skal måske flyttes til @media så det blir responsivt*/
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.prin div{
+    width: 50%;
+}
+
+.prin h2{
+    color: #6d9887;
+}
+
+
+
+
+
+
+
   
+
+/*her starter footer */
+
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.orange div {
+    width: auto;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
     
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
     /*MOBIL*/ 
+                                                                        /*MOBIL*/ 
     
 @media screen and (max-width: 768px){ 
 
@@ -292,13 +514,58 @@ div #donation_natsvaermer{
         display: none;
     }
 
+    /*slideshow*/
+    /*Ændrer størrelsen + format så det er tilpasset mobil*/
+.slideshow {
+    margin-top: 90px;
+}
+    
+.drage_slide{
+    top: 90px;
+}
+
+
+    #loeve_tekst {
+        top: 11vw;
+        left: 40vw;
+        height: 75vw;
+    }
+
+    #drage_tekst {
+        top: 9vw;
+        left: 10vw;
+        height: 75vw;
+        width: 70%;
+    }
+
+    #loeve_tekst h1, #drage_tekst h1 {
+        text-align: left;
+        font-size: 6vw;
+    }
+
+    #loeve_tekst h4, #drage_tekst h4 {
+        font-size: 2.5vw;
+    }
+    .slideshowtekst_mobil  {
+        width: 70%;
+    }
+
+    .slideshowtekst_laptop {
+        display: none;
+    }
+
+    .læs_mere_knap h4 {
+        width: 16vw;
+    }
+
     /*Fire kort med fokusområder*/
     #firekort {
         flex-wrap: wrap;
+        margin-top: 50px;
     }
 
     #firekort a {
-        width: 80%;
+        width: 45%;
         margin-bottom: 50px;
     }
 
@@ -352,6 +619,32 @@ div #donation_natsvaermer{
     #instafeed h2{ 
         font-size: 3.7vw;
     } 
+
+    /*FOOTER*/
+
+
+    .orange div {
+        width: 35%;
+        margin: 10px;
+    }
+
+    .orange h4 {
+        font-size: 3vw;
+    }
+
+    .orange li {
+        font-size: 2vw;
+        line-height: 1.5;
+    }
+
+    #ikoner a {
+        font-size: 6vw;
+    }
+    #ikoner div {
+        
+        flex-wrap: nowrap;
+        width: 50%;
+    }
     
 } 
     
@@ -361,6 +654,12 @@ div #donation_natsvaermer{
     
 @media screen and (min-width: 768px){ 
     #burger_menu {
+        display: none;
+    }
+
+    /*SLIDESHOW*/
+    /*Skjuler mobilversion af teksten*/
+    .slideshowtekst_mobil {
         display: none;
     }
     } 

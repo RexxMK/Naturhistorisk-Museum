@@ -8,6 +8,10 @@
     box-sizing: border-box;   
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
+
+body {
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }
@@ -214,7 +218,7 @@ footer h4 {
 
     
 
-    .slideshow {
+    .slideshow { /*Overflow skaber horizontal scrollbar - kig på dette*/
      
       width: 100%;
       z-index: -1;

@@ -153,7 +153,15 @@
         margin-left: auto;
         margin-right: auto;
     }
+    #hairguy_udstilling_com, #insekter_udstilling_com {
+        display: none;
+    }
 
+    #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
     
 }
 
@@ -176,7 +184,9 @@
     }
 
 /*udstillings artikle*/  
-
+    #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
+        display: none;
+    }
 }
 
 

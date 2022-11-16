@@ -413,6 +413,25 @@ div #donation_natsvaermer{
     margin-top: 170px; /*skal være 170px for ikke at forsvinde under header.*/
 }
 
+#prin_bille{
+    margin-top: 1.2vw;
+}
+
+#prin_pawprint{
+    max-width: 20vw;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+#prin_mad{
+    max-width: 40vw;
+    margin-left: 80px;  
+}
+
+#prin_ikon div{
+    width: 25%;
+}
+
 .prin{
     display: flex;
     justify-content: space-evenly;
@@ -431,8 +450,8 @@ div #donation_natsvaermer{
 
 .prin h2{
     color: #6d9887;
+    margin-bottom: 1.2vw;
 }
-
 
 
 

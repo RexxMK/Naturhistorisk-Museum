@@ -470,6 +470,22 @@ div #donation_natsvaermer{
     
 @media screen and (max-width: 768px){ 
 
+    p{
+        font-size: 2.7vw;
+    }
+
+    h3{
+        font-size: 4vw;
+    }
+
+    h5{
+        font-size: 3.0vw;
+    }
+
+    h6{
+        font-size: 3.6vw;
+    }
+
     /*Header*/
 
     header {
@@ -615,6 +631,26 @@ div #donation_natsvaermer{
         width: 50%;
     }
     
+    /*Praktiske Informationer*/
+    .prin img{
+        display: none;
+    }
+    
+    #maps_lap{
+        display: none;
+    }
+
+    .prin{
+        flex-direction: column;
+    }
+
+    .prin h1{
+        font-size: 5vw;
+    }
+    
+    .prin h2{
+        font-size: 4.5vw;
+    }
 } 
     
      
@@ -631,6 +667,14 @@ div #donation_natsvaermer{
     .slideshowtekst_mobil {
         display: none;
     }
+
+    /*Praktisk information*/
+    #maps_mobile{
+        display: none;
+    }
+
     } 
+
+
     
      

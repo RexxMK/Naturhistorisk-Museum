@@ -14,7 +14,7 @@
     font-size: 70px;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .sekskort {
     display: flex;
@@ -22,7 +22,6 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    
     width: 85%;
 }
 
@@ -42,13 +41,102 @@
     padding-top: 15px;
 }
 
+.sekskort h3 {
+    font-size: 20px;
+}
+
 .sekskort p {
     font-size: 14px;
 }
 
+/*her starter artikelsiden */
+
+.fuld_billede_udstillinger {
+   background-image: url(img/mylder.jpg);
+   background-size: cover;
+   background-position: top right;
+   background-repeat: no-repeat;
+}
 
 
-/*Mobil*/ 
+.fuld_billede_udstillinger h1 {
+    color: #f69d10;
+    font-size: 7vw;
+    text-shadow: 1px 1px 5px black;
+    text-align: left;
+    padding-top: 28vw;
+}
+
+.fuld_billede_udstillinger h2 {
+    font-size: 3.2vw;
+    text-shadow: 1px 1px 5px black;
+}
+
+.fuld_billede_udstillinger div {
+    height: 50vw;
+    margin-left: 7vw;
+}
+
+#bille-mobil {
+    width: 10vw;
+    position: relative;
+    bottom: 3vw;
+    left: 50vw;
+    transform: rotate(45deg);
+}
+
+#fugle-mobil {
+    width: 8vw;
+    position:  relative;
+    left: 65vw;
+    margin: 0;
+}
+
+
+.indhold_artikel_udstillinger {
+    display: flex;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    
+    
+}
+#brodtekst {
+    width: 50%;
+}
+
+
+#bille_illustration, #blade_illustration {
+    width: 25%; 
+
+}
+
+#bille_illustration img, #blade_illustration img {
+    width: 9vw;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+#bille_illustration img {
+    bottom: 5vw;
+}
+
+#blade_illustration img {
+    top: 28vw;
+}
+    
+
+.tokort {
+    width: 100%;
+    display: flex;
+}
+
+.tokort div{
+    width: 50%;
+}
+
+
+
+
 
 @media screen and (max-width: 768px){
     .sekskort {
@@ -88,10 +176,34 @@
     #firben_udstilling_com {
         display: none;
     }
+/*udstillings artikle*/  
 
+    #bille_illustration, #blade_illustration {
+        display: none;
+    }
+
+
+    #hairguy_udstilling_com, #insekter_udstilling_com {
+        display: none;
+    }
+
+    #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .indhold_artikel_udstillinger #brodtekst p {
+        font-size: 15px;
+    }
+    
+    #brodtekst {
+        width: 75%;
+        margin: auto;
+    }
+   
 }
 
-/*laptop*/  
+/*laptop footer*/  
 @media screen and (min-width: 768px){
 
     .udstilling_mobil {
@@ -109,6 +221,18 @@
         padding-top: 30px;
     }
 
+/*udstillings artikle*/  
+    #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
+        display: none;
+    }
+
+    #bille-mobil {
+        display: none;
+    }
+
+    #fugle-mobil {
+        display: none;
+    }
 }
 
 

@@ -8,6 +8,10 @@
     box-sizing: border-box;   
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
+
+body {
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }
@@ -64,53 +68,7 @@ p{
 
 
 
-/*FOOTER*/
-footer {
-    width: 100%;
-}
-.hvid {
-    padding-top: 50px;
-}
 
-.hvid img {
-    position: relative;
-    top: 20px;
-    left: 80%;
-    width: 12%;
-}
-
-.orange {
-    background-color: #f69d10;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-}
-
-footer div ul li {
-    list-style-type: none;
-    line-height: 30px;
-}
-
-footer h4 {
-    text-decoration: none;
-    font-size: 20px;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-
-#ikoner a {
-    font-size: 50px;
-    color: white;
-    text-decoration: none;
-    flex-wrap: wrap;
-}
-
-#fo_her{
-    color: white;
-}
 
 
 
@@ -197,21 +155,70 @@ nav a:hover{
 } 
       
 
+/*FOOTER*/
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+
+
+#fo_her{
+    color: white;
+}
+
+
+
+
 
 
 
                                                                            /*INDEX*/
     /*MAIN*/ 
 
-
-
-
-
     /*SLIDESHOW*/
 
     
 
-    .slideshow {
+    .slideshow { /*Overflow skaber horizontal scrollbar - kig på dette*/
      
       width: 100%;
       z-index: -1;
@@ -409,12 +416,10 @@ div #donation_natsvaermer{
 
 
                                                         /*PRAKTISK INFORMATIONSSIDE*/
-#open{
-    margin-top: 170px; /*skal være 170px for ikke at forsvinde under header.*/
-}
-
 #prin_bille{
-    margin-top: 1.2vw;
+    margin-top: 3vw;
+    margin-left: 80px;
+    width: 30vw;
 }
 
 #prin_pawprint{
@@ -429,7 +434,7 @@ div #donation_natsvaermer{
 }
 
 #prin_ikon div{
-    width: 25%;
+    width: 5vw;
 }
 
 .prin{
@@ -453,6 +458,15 @@ div #donation_natsvaermer{
     margin-bottom: 1.2vw;
 }
 
+.prin h1{
+    color: #8599B2;
+    text-align: center;
+    font-size: 4vw;
+
+    margin-top: 100px; /*skal være 170px for ikke at forsvinde under header.*/
+
+}
+
 
 
 /*MEDIA QUERIES*/
@@ -462,6 +476,22 @@ div #donation_natsvaermer{
                                                                         /*MOBIL*/ 
     
 @media screen and (max-width: 768px){ 
+
+    p{
+        font-size: 2.7vw;
+    }
+
+    h3{
+        font-size: 4vw;
+    }
+
+    h5{
+        font-size: 3.0vw;
+    }
+
+    h6{
+        font-size: 3.6vw;
+    }
 
     /*Header*/
 
@@ -582,9 +612,11 @@ div #donation_natsvaermer{
         font-size: 3.7vw;
     } 
 
-    /*FOOTER*/
+    /*FOOTER MOBIL*/
 
-
+    .orange {
+        flex-wrap: wrap;
+    }
     .orange div {
         width: 35%;
         margin: 10px;
@@ -603,11 +635,42 @@ div #donation_natsvaermer{
         font-size: 6vw;
     }
     #ikoner div {
-        
-        flex-wrap: nowrap;
-        width: 50%;
+        display: inline;
+        margin: 0;
     }
     
+    /*Praktiske Informationer*/
+    #prin_img{
+        display: none;
+    }
+
+    /*Facilitetsikoner skal stadig være på række*/
+    #prin_ikon{
+        flex-direction: row;
+    }
+    
+    #maps_lap{
+        display: none;
+    }
+
+    .prin{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .prin div{
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .prin h1{
+        font-size: 5vw;
+    }
+    
+    .prin h2{
+        font-size: 4.5vw;
+    }
 } 
     
      
@@ -624,6 +687,14 @@ div #donation_natsvaermer{
     .slideshowtekst_mobil {
         display: none;
     }
+
+    /*Praktisk information*/
+    #maps_mobile{
+        display: none;
+    }
+
     } 
+
+
     
      

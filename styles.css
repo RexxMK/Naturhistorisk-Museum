@@ -409,10 +409,6 @@ div #donation_natsvaermer{
 
 
                                                         /*PRAKTISK INFORMATIONSSIDE*/
-#open{
-    margin-top: 170px; /*skal være 170px for ikke at forsvinde under header.*/
-}
-
 #prin_bille{
     margin-top: 3vw;
     margin-left: 80px;
@@ -453,6 +449,15 @@ div #donation_natsvaermer{
 .prin h2{
     color: #6d9887;
     margin-bottom: 1.2vw;
+}
+
+.prin h1{
+    color: #8599B2;
+    text-align: center;
+    font-size: 4vw;
+
+    margin-top: 100px; /*skal være 170px for ikke at forsvinde under header.*/
+
 }
 
 

@@ -14,7 +14,7 @@
     font-size: 70px;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .sekskort {
     display: flex;
@@ -22,7 +22,6 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    
     width: 85%;
 }
 
@@ -42,13 +41,63 @@
     padding-top: 15px;
 }
 
+.sekskort h3 {
+    font-size: 20px;
+}
+
 .sekskort p {
     font-size: 14px;
 }
 
+/*her starter artikelsiden */
+
+.fuld_billede_udstillinger {
+   background-image: url(img/mylder.jpg);
+   background-size: cover;
+}
+
+.fuld_billede_udstillinger h1 {
+    color: #f69d10;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.fuld_billede_udstillinger h2 {
+    font-size: 35px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.indhold_artikel_udstillinger {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.indhold_artikel_udstillinger div p {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.tokort {
+    width: 100%;
+    display: flex;
+}
+
+.tokort div{
+    width: 50%;
+}
+
+#bille_illustration, #blade_illustration {
+    width: 100%;
+    height: 100%;
+}
 
 
-/*Mobil*/ 
+/*her starter responsive footer*/
+
+
+/*Mobil footer*/ 
 
 @media screen and (max-width: 768px){
     .sekskort {
@@ -88,10 +137,33 @@
     #firben_udstilling_com {
         display: none;
     }
+/*udstillings artikle*/  
 
+    #bille_illustration, #blade_illustration {
+        display: none;
+    }
+
+    .indhold_artikel_udstillinger div p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hairguy_udstilling_com, #insekter_udstilling_com {
+        display: none;
+    }
+
+    #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .indhold_artikel_udstillinger #brodtekst p {
+        font-size: 15px;
+    }
+   
 }
 
-/*laptop*/  
+/*laptop footer*/  
 @media screen and (min-width: 768px){
 
     .udstilling_mobil {
@@ -107,6 +179,11 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 30px;
+    }
+
+/*udstillings artikle*/  
+    #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
+        display: none;
     }
 
 }

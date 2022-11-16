@@ -647,10 +647,13 @@ div #donation_natsvaermer{
 
     .prin{
         flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .prin div{
         width: 100%;
+        margin-inline: 0;
     }
 
     .prin h1{

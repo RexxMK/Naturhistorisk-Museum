@@ -414,7 +414,9 @@ div #donation_natsvaermer{
 }
 
 #prin_bille{
-    margin-top: 1.2vw;
+    margin-top: 3vw;
+    margin-left: 80px;
+    width: 30vw;
 }
 
 #prin_pawprint{
@@ -429,7 +431,7 @@ div #donation_natsvaermer{
 }
 
 #prin_ikon div{
-    width: 25%;
+    width: 5vw;
 }
 
 .prin{

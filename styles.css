@@ -632,8 +632,13 @@ div #donation_natsvaermer{
     }
     
     /*Praktiske Informationer*/
-    .prin img{
+    #prin_img{
         display: none;
+    }
+
+    /*Facilitetsikoner skal stadig være på række*/
+    #prin_ikon{
+        flex-direction: row;
     }
     
     #maps_lap{
@@ -642,6 +647,10 @@ div #donation_natsvaermer{
 
     .prin{
         flex-direction: column;
+    }
+
+    .prin div{
+        width: 100%;
     }
 
     .prin h1{

@@ -51,25 +51,19 @@
 
 /*her starter artikelsiden */
 
-.fuld_billede_udstillinger div {
+.fuld_billede_udstillinger {
    background-image: url(img/mylder.jpg);
    background-size: cover;
-   height: 700px;
 }
 
 .fuld_billede_udstillinger h1 {
-    position: relative;
-    top: 450px;
-    left: 200px;
     color: #f69d10;
     text-transform: uppercase;
     font-size: 70px;
     text-shadow: 1px 1px 5px black;
 }
+
 .fuld_billede_udstillinger h2 {
-    position: relative;
-    top: 450px;
-    left: 200px;
     font-size: 35px;
     text-shadow: 1px 1px 5px black;
 }
@@ -95,7 +89,8 @@
 }
 
 #bille_illustration, #blade_illustration {
-    width: 100%
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -160,9 +155,12 @@
     #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
         padding-top: 30px;
         padding-bottom: 30px;
-        
     }
     
+    .indhold_artikel_udstillinger #brodtekst p {
+        font-size: 15px;
+    }
+   
 }
 
 /*laptop footer*/  
@@ -187,6 +185,7 @@
     #hairguy_udstilling_mobil, #indsekt_udstilling_mobil {
         display: none;
     }
+
 }
 
 

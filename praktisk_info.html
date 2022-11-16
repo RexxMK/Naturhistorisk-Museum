@@ -6,7 +6,7 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Naturhistorisk Museum</title> 
+    <title>Praktisk Information</title> 
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script> 
 </head> 
@@ -31,7 +31,7 @@
                 <div class="dropdown-content"> 
                     <ul> 
                         <li><a href="praktisk_info.html">Praktiske informationer</a></li> 
-                        <li><a href="#">Udstillinger</a></li>
+                        <li><a href="udstillinger_oversigt.html">Udstillinger</a></li>
                         <li><a href="#">Aktiviteter</a></li>
                         <li><a href="#">Books os</a></li> 
                     </ul>
@@ -89,6 +89,9 @@
 
     <!--MAIN-->
     <main>
+        <section class="prin">
+            <h1>Praktiske informationer</h1>
+        </section>
 
         <!--Åbningstider-->
         <section class="prin" id="open">
@@ -99,9 +102,8 @@
                     <br>
                     <p>Lukket: 24., 25. og 31. december samt 1. januar.</p>
                 </div>
-                <div>
-                    <!--KRAVLENDE BILLE INDSÆTTES HER-->
-                    <img src="" alt="Kravlende Bille">
+                <div id="prin_bille">
+                    <img src="img/prin_kravlende_bille.png" alt="Kravlende bille">
                 </div>
             </div>
 
@@ -121,7 +123,7 @@
                 <br>
                 <p>Grupper (min. 10 pers.): 85 kr. pr. person</p>
                 <br>
-                <p>Med JP-kort: 25% rabat på entréen for op til 2 personer </p>
+                <p>Med JP-kort: 25% rabat på entréen for op til 2 personer</p>
                 <br>
                 <p>AU-medarbejdere: 60 kr. pr. person (med medarbejderkort)</p>
                 <br>
@@ -144,7 +146,7 @@
         <!--Årskort-->
         <section class="prin">
             <div>
-                <img src="" alt="børn">
+                <img src="img/prin_kids.jpg" alt="børn">
             </div>
 
             <div>
@@ -181,15 +183,19 @@
                 <p>Lærere og pædagoger i arbejdsøjemed.</p>
             </div>
 
-            <div id="prin_pawprint">
-                <img src="svg/pawprint.svg" alt="fodspor">
+            <div>
+                <div id="prin_pawprint">
+                    <img src="svg/pawprint.svg" alt="fodspor">
+                </div>
             </div>
         </section>
 
         <!--Mad & drikke-->
         <section class="prin">
-            <div>
-                <img src="" alt="madpakke">
+            <div id="prin_mad">
+                <div>
+                    <img src="svg/madpakke.svg" alt="madpakke">
+                </div>
             </div>
 
             <div>
@@ -204,14 +210,40 @@
         </section>
 
 
-<!--Faciliteter skal indsættes her-->
+        <!--Faciliteter skal indsættes her-->
+        <section class="prin">
+            <div>
+                <h2>Faciliteter</h2>
+            </div>
+            <div><!--Tom div for at Faciliteter flugter med andre overskrifter på siden--></div>
+        </section>
+
+        <section>
+            <div class="prin" id="prin_ikon">
+                <div>
+                    <img src="svg/restroom-solid.svg" alt="Toilet">
+                </div>
+
+                <div>
+                    <img src="svg/wheelchair-solid.svg" alt="Kørestol">
+                </div>
+
+                <div>
+                    <img src="svg/hanger.svg" alt="Garderobe">
+                </div>
+
+                <div>
+                    <img src="svg/baby.svg" alt="Puslebord">
+                </div>
+            </div>
+        </section>
 
 
         <!--Find vej-->
         <section class="prin">
             <div>
                 <h2>Find vej</h2>
-                <img src="" alt="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.403250305396!2d10.200495515845649!3d56.16742178066622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fbf5ee793ef%3A0xafa525222afb8b08!2sNaturhistorisk%20Museum%20%C3%85rhus!5e0!3m2!1sda!2sdk!4v1668584053257!5m2!1sda!2sdk" width="650" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div>

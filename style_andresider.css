@@ -155,10 +155,11 @@
 
 }
 
-#prin_bille{
-    margin-top: 3vw;
+.prin_bille{
     margin-left: 80px;
     width: 30vw;
+    position: relative;
+    top:3vw ;
 }
 
 #prin_pawprint{
@@ -196,12 +197,22 @@
     margin-inline:20px;
 }
 
+.prin div div {
+    width: 100%;
+    margin: 0;
+}
+
 .prin h2, #madogdrikke-tekst h2{
     color: #6d9887;
     margin-bottom: 1.2vw;
 }
 #madogdrikke-tekst h2 {
     font-size: 4vw;
+}
+
+#prin_mad .prin_img {
+    width: 60%;
+    margin-left: 5vw;
 }
 
 .prin h1{
@@ -346,9 +357,10 @@
         font-size: 4.5vw;
     }
 
-    #madogdrikke-com {
-        display: none;
+    #aabningstider div {
+        width: 100%;
     }
+  
 }
 
 /*laptop*/  
@@ -388,9 +400,6 @@
         display: none;
     }
 
-    #madogdrikke {
-        display: none;
-    }
     #maps_mobile{
         display: none;
     }

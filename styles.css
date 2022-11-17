@@ -578,7 +578,12 @@ div #donation_natsvaermer{
         display: inline;
         margin: 0;
     }
-    
+    .hvid img {
+        position: relative;
+        top: 20px;
+        left: 70%;
+        width: 20%;
+    }
 } 
     
      

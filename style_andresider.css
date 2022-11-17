@@ -193,7 +193,16 @@
     font-size: 4vw;
 
     margin-top: 100px; /*skal være 170px for ikke at forsvinde under header.*/
+}
 
+#maps_lap{
+    width: 100%;
+    height: 430px;
+}
+
+#maps_mobile{
+    width: 100%;
+    height: 300px;
 }
 
 
@@ -266,7 +275,7 @@
    
 
     /*Praktiske Informationer*/
-    #prin_img{
+    .prin_img{
         display: none;
     }
 
@@ -335,13 +344,3 @@
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-

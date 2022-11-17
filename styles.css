@@ -1,8 +1,4 @@
-/*Velkommen til det fedeste CSS dokument*/ 
-
-                                                                            /*Gennerelle regler*/ 
-
-*{ 
+/*Gennerelle regler*/ *{ 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;   
@@ -12,6 +8,7 @@
 body {
     overflow-x: hidden;
 }
+
 a {
     text-decoration: none;
 }
@@ -19,6 +16,7 @@ a {
 img{ 
     width: 100%; 
 } 
+
 
 /*SKRIFTSREGLER*/
     
@@ -65,13 +63,6 @@ p{
 }
 
 
-
-
-
-
-
-
-
 /*HEADER*/ 
     
 header{ 
@@ -79,13 +70,13 @@ header{
     position: fixed;
     top: 0;
     justify-content: space-between; 
+
     width: 100%; 
     height: 120px; 
-    background-color: white;
-    z-index: 100;
-        
-    box-shadow: 2px 2px 5px lightgrey;
 
+    background-color: white;
+    box-shadow: 2px 2px 5px lightgrey;
+    z-index: 100;
 } 
     
 #logo{ 
@@ -107,7 +98,6 @@ nav{
     padding-top: 50px;  
 } 
     
-     
 nav a{ 
     text-decoration: none; 
     color: black; 
@@ -116,16 +106,13 @@ nav a{
 nav a:hover{ 
     color: #f69d10; 
 } 
-    
 
 #burger_menu img {
     position: relative;
     top: 25px;
     right: 20px;
     height: 40px;
-
 }
-     
 
     /*Dropdown*/ 
     
@@ -154,9 +141,8 @@ nav a:hover{
     margin-bottom: 10px; 
 } 
       
-                                                                           /*INDEX*/
-
 /*FOOTER*/
+
 footer {
     width: 100%;
 }
@@ -177,7 +163,6 @@ footer {
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
@@ -200,23 +185,13 @@ footer h4 {
     flex-wrap: wrap;
 }
 
-
-
 #fo_her{
     color: white;
 }
 
-
-
-
-
-
-
 /*INDEX*/
 
-    /*MAIN*/ 
-
-    /*SLIDESHOW*/
+/*SLIDESHOW*/
 
 .slideshow {
     width: 100%;
@@ -276,7 +251,7 @@ footer h4 {
 .slideshow h1{
     font-size: 5vw;
     width: 75%;
-    }
+}
 
 .slideshow h4 {
     font-size: 1.2vw;
@@ -292,30 +267,24 @@ footer h4 {
     width: 10vw;
 }
 
-
-    /*Fire kort med fokusområder*/ 
-    
+/*Fire kort med fokusområder*/ 
      
- #firekort { 
+#firekort { 
     display: flex; 
     justify-content: space-around; 
     margin-top: 80px;
     margin-bottom: 100px;
     } 
 
-    #firekort a {
-        width: 23%;
-    }
+#firekort a {
+    width: 23%;
+}
 
-    #firekort h3 {
-        font-size: 2vw;
-    }
-    
+#firekort h3 {
+    font-size: 2vw;
+}
 
-
-
-
-    /*Donation*/
+/*Donation*/
 #donation{
     display: flex;
     margin-top: 3%;
@@ -377,7 +346,6 @@ div #donation_natsvaermer{
     width: 50%;
 }
     
-    
 /*Instafeed med 4x img*/ 
     
 #instafeed h2{ 
@@ -389,9 +357,7 @@ div #donation_natsvaermer{
     font-size: 3vw;
 
     padding-bottom: 3%;
-} 
-    
-     
+}
     
 #instafeed_img{ 
     display: flex; 
@@ -403,67 +369,14 @@ div #donation_natsvaermer{
 }
 
 
-/*FOOTER*/
-footer {
-    width: 100%;
-}
-.hvid {
-    padding-top: 50px;
-}
-
-.hvid img {
-    position: relative;
-    top: 20px;
-    left: 80%;
-    width: 12%;
-}
-
-.orange {
-    background-color: #f69d10;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-}
-
-footer div ul li {
-    list-style-type: none;
-    line-height: 30px;
-}
-
-footer h4 {
-    text-decoration: none;
-    font-size: 20px;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-
-#ikoner a {
-    font-size: 50px;
-    color: white;
-    text-decoration: none;
-    flex-wrap: wrap;
-}
-
-
-
-#fo_her{
-    color: white;
-}
-
-
-
-
 
 /*MEDIA QUERIES*/
 
+/*MOBIL*/ 
 
-    /*MOBIL*/ 
-                                                                        /*MOBIL*/ 
-    
 @media screen and (max-width: 768px){ 
+
+/*Generelt*/
 
     p{
         font-size: 2.7vw;
@@ -481,12 +394,13 @@ footer h4 {
         font-size: 3.6vw;
     }
 
+
     /*Header*/
 
     header {
         height: 90px;
     }
-    
+        
     nav {
         display: none;
     }
@@ -498,16 +412,15 @@ footer h4 {
         margin: 2%;
     }
 
-    /*slideshow*/
+    /*SLIDESHOW*/
     /*Ændrer størrelsen + format så det er tilpasset mobil*/
-.slideshow {
-    margin-top: 90px;
-}
-    
-.drage_slide{
-    top: 90px;
-}
-
+    .slideshow {
+        margin-top: 90px;
+    }
+        
+    .drage_slide{
+        top: 90px;
+    }
 
     #loeve_tekst {
         top: 11vw;
@@ -530,7 +443,8 @@ footer h4 {
     #loeve_tekst h4, #drage_tekst h4 {
         font-size: 2.5vw;
     }
-    .slideshowtekst_mobil  {
+        
+    .slideshowtekst_mobil{
         width: 70%;
     }
 
@@ -609,6 +523,7 @@ footer h4 {
     .orange {
         flex-wrap: wrap;
     }
+
     .orange div {
         width: 35%;
         margin: 10px;
@@ -626,10 +541,12 @@ footer h4 {
     #ikoner a {
         font-size: 6vw;
     }
+        
     #ikoner div {
         display: inline;
         margin: 0;
     }
+        
     .hvid img {
         position: relative;
         top: 20px;
@@ -639,7 +556,6 @@ footer h4 {
 } 
     
      
-    
     /*LAPTOP*/ 
     
 @media screen and (min-width: 768px){ 
@@ -653,4 +569,4 @@ footer h4 {
         display: none;
     }
 
-    } 
+} 

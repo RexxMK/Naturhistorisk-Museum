@@ -155,94 +155,142 @@ nav a:hover{
 } 
       
                                                                            /*INDEX*/
+
+/*FOOTER*/
+footer {
+    width: 100%;
+}
+.hvid {
+    padding-top: 50px;
+}
+
+.hvid img {
+    position: relative;
+    top: 20px;
+    left: 80%;
+    width: 12%;
+}
+
+.orange {
+    background-color: #f69d10;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer h4 {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#ikoner a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+
+
+#fo_her{
+    color: white;
+}
+
+
+
+
+
+
+
+/*INDEX*/
+
     /*MAIN*/ 
 
     /*SLIDESHOW*/
 
+.slideshow {
+    width: 100%;
+    z-index: -1;
+    margin-top: 120px;
+    overflow: hidden;
+}
     
-
-    .slideshow { /*Overflow skaber horizontal scrollbar - kig på dette*/
-     
-      width: 100%;
-      z-index: -1;
-      margin-top: 120px;
-      overflow: hidden;
+.drage_slide {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    
+    width: 100%;
       
-    }
-    
-  
-    
-    .drage_slide {
-      position: absolute;
-      top: 120px;
-      left: 0;
-    
-      width: 100%;
+    transform: translateX( 100% );
+    background-image: url(img/drage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
       
-      transform: translateX( 100% );
-      background-image: url(img/drage.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
-      
-      animation: Transition 30s linear infinite;
-    }
+    animation: Transition 30s linear infinite;
+}
     
-    
-    .loeve_slide {
-      background-image: url( img/lion.jpg );
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+.loeve_slide {
+    background-image: url( img/lion.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    @keyframes Transition {
-      0% { transform: translateX( -100% ); }
-      5% { transform: translateX(0);}
-      25% { transform: translateX(0);}
-      30% { transform: translateX(100%);}
-      60% { transform: translateX( 100% ); }
-      65% { transform: translateX( 0 ); }
-      85% { transform: translateX( 0 ); }
-      90% { transform: translateX( -100% ); }
-      100% { transform: translateX( -100% ); }
-    }
+@keyframes Transition {
+    0% { transform: translateX( -100% ); }
+    5% { transform: translateX(0);}
+    25% { transform: translateX(0);}
+    30% { transform: translateX(100%);}
+    60% { transform: translateX( 100% ); }
+    65% { transform: translateX( 0 ); }
+    85% { transform: translateX( 0 ); }
+    90% { transform: translateX( -100% ); }
+    100% { transform: translateX( -100% ); }
+}
 
-    #loeve_tekst {
+#loeve_tekst {
     position: relative;
     top: 15vw;
     left: 40vw;
     height: 50vw;
+}
+
+#drage_tekst {
+    position: relative;
+    top: 15vw;
+    left: 15vw;
+    height: 50vw;
+}
+
+.slideshow h1{
+    font-size: 5vw;
+    width: 75%;
     }
 
-    #drage_tekst {
-        position: relative;
-        top: 15vw;
-        left: 15vw;
-        height: 50vw;
-    }
-
-    .slideshow h1{
-        font-size: 5vw;
-        width: 75%;
-
-    }
-
-    .slideshow h4 {
-        font-size: 1.2vw;
-        width: 40%;
-    }
-
-
+.slideshow h4 {
+    font-size: 1.2vw;
+    width: 40%;
+}
 
 .læs_mere_knap h4 {
-        padding: 1vw 2vw 1vw 2vw;
-        background-color: #F69D10;
-        border-radius: 25px;
-        font-size: 1.2vw;
-        margin-top: 1.5vw;
-        width: 10vw;
-        
-    }
+    padding: 1vw 2vw 1vw 2vw;
+    background-color: #F69D10;
+    border-radius: 25px;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    width: 10vw;
+}
 
 
     /*Fire kort med fokusområder*/ 
@@ -582,7 +630,12 @@ footer h4 {
         display: inline;
         margin: 0;
     }
-    
+    .hvid img {
+        position: relative;
+        top: 20px;
+        left: 70%;
+        width: 20%;
+    }
 } 
     
      

@@ -89,7 +89,7 @@ header{
 } 
     
 #logo{ 
-    margin: 2%; 
+    margin: 20px; 
     width: 100px; 
 } 
     
@@ -405,60 +405,6 @@ div #donation_natsvaermer{
 
 
 
-                                                        /*PRAKTISK INFORMATIONSSIDE*/
-#prin_bille{
-    margin-top: 3vw;
-    margin-left: 80px;
-    width: 30vw;
-}
-
-#prin_pawprint{
-    max-width: 20vw;
-    margin-left: 120px;
-    margin-top: 30px;
-}
-
-#prin_mad{
-    max-width: 40vw;
-    margin-left: 80px;  
-}
-
-#prin_ikon div{
-    width: 5vw;
-}
-
-.prin{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 70px;
-   
-
-    /*Margin for alle sections på siden så der er luft til hver side. skal måske flyttes til @media så det blir responsivt*/
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.prin div{
-    width: 50%;
-    margin-inline:20px;
-}
-
-.prin h2{
-    color: #6d9887;
-    margin-bottom: 1.2vw;
-}
-
-.prin h1{
-    color: #8599B2;
-    text-align: center;
-    font-size: 4vw;
-
-    margin-top: 100px; /*skal være 170px for ikke at forsvinde under header.*/
-
-}
-
-
-
 /*MEDIA QUERIES*/
 
 
@@ -494,6 +440,10 @@ div #donation_natsvaermer{
     }
     #flag {
         display: none;
+    }
+
+    #logo{
+        margin: 2%;
     }
 
     /*slideshow*/
@@ -629,38 +579,6 @@ div #donation_natsvaermer{
         margin: 0;
     }
     
-    /*Praktiske Informationer*/
-    #prin_img{
-        display: none;
-    }
-
-    /*Facilitetsikoner skal stadig være på række*/
-    #prin_ikon{
-        flex-direction: row;
-    }
-    
-    #maps_lap{
-        display: none;
-    }
-
-    .prin{
-        flex-direction: column;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .prin div{
-        width: 100%;
-        margin-inline: 0;
-    }
-
-    .prin h1{
-        font-size: 5vw;
-    }
-    
-    .prin h2{
-        font-size: 4.5vw;
-    }
 } 
     
      
@@ -675,11 +593,6 @@ div #donation_natsvaermer{
     /*SLIDESHOW*/
     /*Skjuler mobilversion af teksten*/
     .slideshowtekst_mobil {
-        display: none;
-    }
-
-    /*Praktisk information*/
-    #maps_mobile{
         display: none;
     }
 

@@ -89,7 +89,7 @@ header{
 } 
     
 #logo{ 
-    margin: 2%; 
+    margin: 20px; 
     width: 100px; 
 } 
     
@@ -504,6 +504,10 @@ div #donation_natsvaermer{
     }
     #flag {
         display: none;
+    }
+
+    #logo{
+        margin: 2%;
     }
 
     /*slideshow*/

@@ -11,7 +11,7 @@
 #udstillinger h1 {
     color: #f69d10;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 4vw;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -159,10 +159,10 @@
         width: 20%;
     }
 
-    main h1 {
+    #udstillinger h1 {
         color: #f69d10;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 10vw;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 0px;

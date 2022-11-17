@@ -272,6 +272,9 @@
         display: none;
     }
 
+    #madogdrikke-com {
+        display: none;
+    }
   
 
     #udstillinger h1 {
@@ -397,6 +400,10 @@
     #fuglepraktiskinfo-mobil {
         display: none;
     }
+
+#madogdrikke {
+    display: none;
+}
 
     #maps_mobile{
         display: none;

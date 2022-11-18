@@ -1,4 +1,15 @@
 User-agent: *
-Allow: /
+Disallow:/mobil_menu_artikel.html
+Disallow:/mobil_menu_forside.html
+Disallow:/mobil_menu_oversigt.html
+Disallow:/mobil_menu_praktisk.html
+Disallow:/mobil_planlaeg_artikel.html
+Disallow:/mobil_planlaeg_forside.html
+Disallow:/mobil_planlaeg_oversigt.html
+Disallow:/mobil_planlaeg_praktisk.html
+Disallow:/mobil_menu_praktisk_artikel.html
+Disallow:/mobil_menu_praktisk_forside.html
+Disallow:/mobil_menu_praktisk_oversigt.html
+Disallow:/mobil_menu_praktisk_praktisk.html
 
-Sitemap: http://www.example.com/sitemap.xml - indsæt 
+Sitemap: http://www.naturhistorisk_museum.louispjeldnaes.dk/sitemap.xml 
